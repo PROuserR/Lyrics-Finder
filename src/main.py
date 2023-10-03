@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 
-#hello world
+
 #   Rendering the favicon of the website using send_from_directory
 @app.route('/favicon.ico')
 def favicon():
