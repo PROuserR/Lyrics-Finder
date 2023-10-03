@@ -1,0 +1,85 @@
+body {
+    background-image: linear-gradient(to right, black, darkblue);
+    color: lightblue;
+    padding: 10px;
+}
+
+.title-second {
+    color: gray;
+    margin-top: -15px;
+}
+
+.section {
+    width: 100%;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.query-bar-input {
+    width: 30%;
+    min-width: 400px;
+    margin: 15px;
+}
+
+.lyrics {
+    text-align: center;
+    font-size: x-large;
+    white-space: pre-line;
+}
+
+.hot-tracks {
+    display: flex;
+    width: 80%;
+    overflow: auto;
+}
+
+.hot-track {
+    display: block;
+    margin: 8px;
+}
+
+.hot-track-title {
+    margin-top: -2px;
+}
+
+.hot-track-artist {
+    margin-top: -2px;
+}
+
+.cover-image {
+    width: 170px;
+    height: 170px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    font-size: large;
+    border: 0;
+}
+
+button:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+input {
+    padding: 8px;
+    border-radius: 20px;
+    font-size: large;
+    outline: none;
+}

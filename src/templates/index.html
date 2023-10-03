@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+<header class="section">
+  <h1>Lyrics Finder</h1>
+  <h2 class="title-second">Find your favorite song lyrics with no hustle.</h2>
+</header>
+
+<div class="section">
+  <h2 class="form-label">Type here your query ...</h2>
+  <form class="search" action="{{ url_for("index")}}" method="post">
+      <input name="artist-input" id="artist-input" class="form-text query-bar-input" type="text" placeholder="Artist name" />
+      <input name="song-input" id="song-input" class="form-text query-bar-input" type="text" placeholder="Song title" />
+      <button type="submit" id="search-btn" class="btn btn-primary">Search</button>
+  </form>
+</div>
+
+<div class="section">
+  <h1>Hot Tracks</h1>
+  <div class="hot-tracks">
+      {% for hot_track in hot_tracks %}
+      <div class="hot-track" onclick="searchHotTrack(event)">
+          <img class="cover-image" src={{hot_track.cover}} />
+          <h3 class="hot-track-title">{{hot_track.title}}</h3>
+          <h4 class="hot-track-artist">{{hot_track.artist}}</h4>
+      </div>
+      {% endfor %}
+  </div>
+</div>
+{% endblock %}
