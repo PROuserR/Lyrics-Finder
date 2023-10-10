@@ -4,6 +4,7 @@ from flask import Flask, request, render_template, send_from_directory
 from helper_funcs import *
 import os
 
+
 app = Flask(__name__)
 
 
@@ -11,7 +12,7 @@ app = Flask(__name__)
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+                               'favicon.ico')
 
 
 #   Implementaion of basic routing using the functions above.
@@ -20,7 +21,7 @@ def index():
     #   If the HTTP request method is Post then try to get the lyrics and render its template,
     #   otherwise return an error html page.
     if request.method == "POST":
-        lyrics = getLyrics(request.form["artist-input"], request.form["song-input"])
+        lyrics = get_lyrics(request.form["artist-input"], request.form["song-input"])
         if lyrics:
             return render_template(
                 "lyrics.html",
@@ -32,7 +33,7 @@ def index():
             return render_template("error.html")
     #   If the HTTP request method is not Post then get the hot tracks and render index html page
     else:
-        hot_tracks = getHotTracks()
+        hot_tracks = get_hot_tracks()
         return render_template("index.html", hot_tracks=hot_tracks)
 
 

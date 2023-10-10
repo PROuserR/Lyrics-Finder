@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 #   This function gets the artist name and song title as input and
 #   returns the corresponding lyrics as output using Beautiful soup.
-def getLyrics(artist, song):
+def get_lyrics(artist, song):
     try:
         artist = f'{artist.replace(" ", "").lower()}'
         song = f'{song.replace(" ", "").lower()}'
@@ -23,7 +23,7 @@ def getLyrics(artist, song):
 
 #   The function below fetches the top 100 tracks from Billboard.com with the
 #   artist name, song title and cover image.
-def getHotTracks():
+def get_hot_tracks():
     try:
         url = "https://www.billboard.com/charts/hot-100/"
         page = urlopen(url)
