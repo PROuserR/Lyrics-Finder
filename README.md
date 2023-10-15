@@ -21,13 +21,13 @@ Activate the virtual environment:
 . .venv/Scripts/activate
 ```
 
-Install the requirements
+Install the requirements:
 ```sh
 pip install -r requirements.txt
 ```
 
 # Running
-To launch the website simply run the app.py script
+To launch the website simply run the app.py script inside src directory:
 
 ```sh
 python app.py
