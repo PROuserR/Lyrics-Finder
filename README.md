@@ -37,3 +37,7 @@ To launch the website simply run the app.py script inside src directory:
 ```sh
 python app.py
 ```
+
+# More Inforamtion 📑
+Check out my article where I explain how to build this website.
+[Click here](https://www.codeproject.com/Tips/5369928/From-a-Few-Lines-of-Code-to-Building-a-Whole-Funct)
