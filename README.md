@@ -7,7 +7,7 @@ A website that find lyrics based on user query or by quick selecting a track fro
 
 # Features 🎇
 1. Fetches tha latest hot tracks
-2. Get any song lyrics giving the song title and artist name
+2. Gets any song lyrics giving the song title and artist name
 3. By clicking on a hot track you get the lyrics corresponding to that track
 
 # Installation 💻
