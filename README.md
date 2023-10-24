@@ -1,11 +1,16 @@
-# Lyrics-Finder
-Flask Application that find lyrics based on user query or by quick selecting a track from the Hot Tracks list.
+# Lyrics-Finder 🌐
+A website that find lyrics based on user query or by quick selecting a track from the Hot Tracks list.
 
 
 
 <img src="Screenshot.PNG">
 
-# Installation
+# Features 🎇
+1. Fetches tha latest hot tracks
+2. Get any song lyrics giving the song title and artist name
+3. By clicking on a hot track you get the lyrics corresponding to that track
+
+# Installation 💻
 Clone the repo:
 ```sh
 git clone https://github.com/PROuserR/Lyrics-Finder
@@ -26,7 +31,7 @@ Install the requirements:
 pip install -r requirements.txt
 ```
 
-# Running
+# Running 🚀
 To launch the website simply run the app.py script inside src directory:
 
 ```sh
