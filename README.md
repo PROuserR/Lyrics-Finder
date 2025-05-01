@@ -1,5 +1,5 @@
 # Lyrics-Finder 🌐
-A website that find lyrics based on user query or by quick selecting a track from the Hot Tracks list.
+<i>Find your next favortie lyrics without hassle or just see what's Hot from Hot Tracks list.</i>
 
 
 
